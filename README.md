@@ -1,33 +1,53 @@
-# Group-Recommender-System
-We create a Collaborative filtering based Recommender System for a group of users.
-# Matrix Factorization for Recommendation
-Matrix factorization (MF) techniques are the core of many popular algorithms, including word embedding and topic modeling, and have become a dominant methodology within collaborative-filtering-based recommendation. MF can be used to calculate the similarity in user’s ratings or interactions to provide recommendations. In the simple user item matrix below, Ted and Carol like movies B and C. Bob likes movie B. To recommend a movie to Bob, matrix factorization calculates that users who liked B also liked C, so C is a possible recommendation for Bob.
-![img-2](https://github.com/RishabhSrivastava-17/Group-Recommender-System/assets/72572136/dc95ad9e-0ac7-4109-b80e-4ae52a6ec199)
+# Group Recommender System
 
-![img-4](https://github.com/RishabhSrivastava-17/Group-Recommender-System/assets/72572136/6339e4b8-143f-4bac-b076-292d2ae4893c)
+## Overview
 
-# Matrix factorization using the  alternating least squares (ALS) algorithm
-This method approximates the sparse user item rating matrix u-by-i as the product of two dense matrices, user and item factor matrices of size u × f and f × i  (where u is the number of users, i the number of items and f the number of latent features) . The factor matrices represent latent or hidden features which the algorithm tries to discover. One matrix tries to describe the latent or hidden features of each user, and one tries to describe latent properties of each movie. For each user and for each item, the ALS algorithm iteratively learns (f) numeric “factors” that represent the user or item. In each iteration, the algorithm alternatively fixes one factor matrix and optimizes for the other, and this process continues until it converges.  
-![img-5](https://github.com/RishabhSrivastava-17/Group-Recommender-System/assets/72572136/4117dd26-bd27-49fd-ab02-786cba18b772)
-![img-6](https://github.com/RishabhSrivastava-17/Group-Recommender-System/assets/72572136/93f2ed2a-81d9-4903-ad00-97b18bae05c9)
+In this project, we implement a Group Recommender System based on matrix factorization techniques, using the Alternating Least Squares (ALS) algorithm. The system aims to provide recommendations for groups of users, considering their collective preferences.
 
+## Matrix Factorization for Recommendation
 
+Matrix factorization is the core methodology used in collaborative filtering-based recommendation systems. It involves breaking down the user-item interaction matrix into user and item factor matrices, revealing latent features. Recommendations are then made based on these latent features.
 
-We generate groups of users of user defined size and tried to predict group ratings using methods described below.
+### Matrix Factorization using ALS Algorithm
 
-There are numerous techniques for preference aggregation that is generally divided into three categories:
-Majority-based strategies which use the most popular items for aggregation (e.g., Plurality Voting)
-Consensus-based strategies where preferences of all group members are considered (e.g., Average, Average without Misery, Fairness)
-Borderline strategies which only considers a subset (e.g., Dictatorship, Least Misery, Most Pleasure)
+We utilize the Alternating Least Squares (ALS) algorithm to factorize the user-item rating matrix. ALS iteratively learns latent factors for users and items by optimizing one factor matrix while fixing the other. The process continues until convergence.
 
+## Preference Aggregation
 
+This project involves generating groups of users with user-defined sizes and predicting group ratings. We consider various techniques for preference aggregation:
 
-# Link to research paper on which project is based
-https://www.sciencedirect.com/science/article/pii/S0020025516300196
+- Majority-based strategies (e.g., Plurality Voting) that use the most popular items for aggregation.
+- Consensus-based strategies (e.g., Average, Average without Misery, Fairness) that take into account the preferences of all group members.
+- Borderline strategies (e.g., Dictatorship, Least Misery, Most Pleasure) that only consider a subset of preferences.
 
-# Dataset
-https://media.geeksforgeeks.org/wp-content/uploads/Movie_Id_Titles.csv \n
-https://media.geeksforgeeks.org/wp-content/uploads/file.tsv
+## Research Paper
 
-# References 
-https://www.nvidia.com/en-us/glossary/data-science/recommendation-system/
+The project is based on the research paper available at [this link](https://www.sciencedirect.com/science/article/pii/S0020025516300196).
+
+## Dataset
+
+We used the following dataset files for our project:
+
+- [Movie_Id_Titles.csv](https://media.geeksforgeeks.org/wp-content/uploads/Movie_Id_Titles.csv)
+- [file.tsv](https://media.geeksforgeeks.org/wp-content/uploads/file.tsv)
+
+## References
+
+- [NVIDIA Data Science Glossary - Recommendation System](https://www.nvidia.com/en-us/glossary/data-science/recommendation-system/)
+
+## How to Run
+
+Include instructions for running your system or provide links to relevant code repositories or files.
+
+## Contributors
+
+- [Your Name](https://github.com/yourusername) - Role
+- [Contributor Name](https://github.com/contributorusername) - Role
+
+## License
+
+This project is licensed under the [License Name](LICENSE) - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+Mention any acknowledgments or gratitude for tools, libraries, or other resources used in your project.
