@@ -22,12 +22,12 @@ Borderline strategies which only considers a subset (e.g., Dictatorship, Least M
 
 
 
-Link to research paper on which project is based
+# Link to research paper on which project is based
 https://www.sciencedirect.com/science/article/pii/S0020025516300196
 
-Dataset
+# Dataset
 https://media.geeksforgeeks.org/wp-content/uploads/Movie_Id_Titles.csv
 https://media.geeksforgeeks.org/wp-content/uploads/file.tsv
 
-References 
+# References 
 https://www.nvidia.com/en-us/glossary/data-science/recommendation-system/
