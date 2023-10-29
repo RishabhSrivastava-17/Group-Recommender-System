@@ -9,6 +9,7 @@ In this project, we implement a Group Recommender System based on matrix factori
 ## Matrix Factorization for Recommendation
 
 Matrix factorization is the core methodology used in collaborative filtering-based recommendation systems. It involves breaking down the user-item interaction matrix into user and item factor matrices, revealing latent features. Recommendations are then made based on these latent features.
+
 ![img-5](https://github.com/RishabhSrivastava-17/Group-Recommender-System/assets/72572136/1fab3a56-3090-4f1a-94a9-c8b94376a1e6)
 
 ### Matrix Factorization using ALS Algorithm
